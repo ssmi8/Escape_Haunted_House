@@ -3,24 +3,65 @@
 def intro():
     print("(Everything is dark)")
     print("You look around to try and figure out where you are")
-    print("The last thing you rememeber was walking to your car and then everything went black")
+    print("I was walking to your car")
+    print("and then everything went black")
     print("You can feel old, damp carpet around")
-    print("Your eyes slowly adjust, and you start to make out that your in a strange room")
+    print("Your eyes slowly adjust")
+    print("You start to make out that your in a strange room")
     print()
     print('"Where am I?  Whose room is this?"')
     print()
-    print('A light shines through a crack in the window and shines onto the door...."Is this my way out?"')
+    print("A light shines through the window and shines onto the door....")
+    print('"Is this my way out?"')
     print("You walk towards the door...you notice there is no lock")
     print("You gently push the door open")
     print("In front you of you are three more doors")
     print()
     print("Door #1: Looks old and worn.  There are burn marks on it...")
-    print("Door #2: It's a wooden door. You look closely and can see scratch marks on the door")
+    print("Door #2: It's an old wooden door with see scratch marks")
     print("Has someone been here before?")
     print("Door #3: The last door looks plain, almost new...strange")
     print()
     print()
-    firstPath = input("Which door will you choose? (1/2/3)")
+    firstPath = input("Which door will you choose? (1/2/3):\n")
+    if firstPath == '1':
+        print()
+        path1()
+    elif firstPath == '2':
+        print()
+        path2()
+    elif firstPath == '3':
+        print()
+        path3()
+
+
+def path1():
+    print()
+
+def path1_1():
+    print()
+
+def path1_2():
+    print()
+
+def path2():
+    print()
+
+def path2_1():
+    print()
+
+def path_2():
+    print()
+
+def path3():
+    print()
+
+def path3_1():
+    print()
+
+def path3_2():
+    Print()
+
 
 
 
