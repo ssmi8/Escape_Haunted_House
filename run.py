@@ -1,26 +1,59 @@
 # Creator: Steven Smith
+import sys
+import time
+
+a = 2
+b = 0.1
+c = 0.08
 
 def intro():
     print("(Everything is dark)")
+    time.sleep(a)
     print("You look around to try and figure out where you are")
-    print("I was walking to your car")
+    time.sleep(a)
+    print("You were walking to your car")
+    time.sleep(a)
     print("and then everything went black")
+    time.sleep(a)
     print("You can feel old, damp carpet around")
+    time.sleep(a)
     print("Your eyes slowly adjust")
+    time.sleep(a)
     print("You start to make out that your in a strange room")
     print()
-    print('"Where am I?  Whose room is this?"')
     print()
+    s = '"Where am I?  Whose room is this?"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    print()
+    time.sleep(a)
     print("A light shines through the window and shines onto the door....")
-    print('"Is this my way out?"')
+    time.sleep(a)
+    print()
+    s = '"Is this my way out?"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(1)
+    print()
     print("You walk towards the door...you notice there is no lock")
+    time.sleep(a)
     print("You gently push the door open")
+    time.sleep(a)
     print("In front you of you are three more doors")
+    time.sleep(a)
     print()
     print("Door #1: Looks old and worn.  There are burn marks on it...")
+    time.sleep(a)
     print("Door #2: It's an old wooden door with see scratch marks")
+    time.sleep(a)
     print("Has someone been here before?")
+    time.sleep(a)
     print("Door #3: The last door looks plain, almost new...strange")
+    time.sleep(a)
     print()
     print()
     firstPath = input("Which door will you choose? (1/2/3):\n")
@@ -112,7 +145,7 @@ def path3_1():
     intro()
 
 def path3_2():
-    Print() #Winning path
+    print()  # Winning path
     print("You realise you have a key, this must be the way out")
     print("Slowly, you lean out and notice the door is open")
     print("It's now or never...")
@@ -152,7 +185,33 @@ print("    #                       #")
 print("    #########################")
 print()
 print()
-
+time.sleep(a)
+print("You've had a long day of work")
+time.sleep(a)
+print()
+s = '"I\'m working late again!  I need a promotion"'
+for character in s:
+    sys.stdout.write(character)
+    sys.stdout.flush()
+    time.sleep(b)
+print()
+print("Your car is the only one left in the car park")
+time.sleep(a)
+print("You hear noise behind you")
+time.sleep(a)
+print()
+s = '"Must be the wind or I must be tired"'
+for character in s:
+    sys.stdout.write(character)
+    sys.stdout.flush()
+    time.sleep(b)
+print()
+time.sleep(a)
+print("You turn and .....")
+time.sleep(a)
+print("...Everthing turns black")
+time.sleep(a)
+print()
 start_game = input("Would you like to start the game? (Y/N):\n")
 if start_game == 'n' or start_game == 'N':
     print("Okay...maybe next time")
