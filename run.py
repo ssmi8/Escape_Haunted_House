@@ -50,12 +50,11 @@ def intro():
     time.sleep(a)
     print("Door #2: It's an old wooden door with see scratch marks")
     time.sleep(a)
-    print("Has someone been here before?")
-    time.sleep(a)
     print("Door #3: The last door looks plain, almost new...strange")
     time.sleep(a)
     print()
     print()
+    time.sleep(a)
     firstPath = input("Which door will you choose? (1/2/3):\n")
     if firstPath == '1':
         print()
@@ -68,7 +67,7 @@ def intro():
         path3()
 
 
-def path1():
+def path1():  # Door 1
     print()
 
 def path1_1():
@@ -175,9 +174,6 @@ def path3_2():
     print("Thanks for playing!!")
 
 
-
-
-print()
 print("    #########################")
 print("    #                       #")
 print("    #  Escape Horror House  #")
