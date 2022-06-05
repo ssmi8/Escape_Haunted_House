@@ -50,11 +50,35 @@ def path2():
 def path2_1():
     print()
 
-def path_2():
+def path2_2():
     print()
 
 def path3():
+    print("You push open the door slowly, and come to a corridor")
+    print("It's dark and never ending")
+    print("You here some feint noises in the distance")
+    print("You slowly walk down the corridor")
+    print("There is a light in the distance and movement")
+    print("Another room is next to you and you rush inside")
+    print("Looking around you see an old desk in the corner")
+    print("Upon inspection, you see a key on the desk")
+    print("You pick it up")
     print()
+    print()
+    print("'NOOOOOOOOO!!!!!!")
+    print("You here a scream coming from the corridor")
+    print("They're coming!")
+    print()
+    print("Path #1")
+    print("Path #2")
+    print("Path #3")
+    print("Path #4")
+    print("Path #5")
+    print()
+    secondPath = input("Which path will you take? (1/2/3/4/5:\n")
+    if secondPath == '2':
+        path2_2()
+
 
 def path3_1():
     print()
