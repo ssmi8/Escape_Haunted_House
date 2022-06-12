@@ -68,7 +68,37 @@ def intro():
 
 
 def path1():  # Door 1
+    print("You push the door open and come to another strange room")
+    time.sleep(a)
+    print("This feels a lot colder than the previous room")
+    time.sleep(a)
+    print("You notice an old bed in the corner of the room")
+    time.sleep(a)
+    print("Gently and without dounf, you walk towards the bed")
+    time.sleep(a)
+    print("There's scraps of paper, crumpled on top")
+    time.sleep(a)
+    print("It reads...")
+    time.sleep(a)
     print()
+    s = '"I\'ve been here almost four days now, and still he says nothing to me.  He only comes in to give me scraps of food once a day.  I noticed mud on his shoes today, which means he must leave the house.  This could be my only way of escape!"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    print("You put the note in your pocket, and walk to the otherside of the room.")
+    time.sleep(a)
+    print()
+    time.sleep(a)
+    print("There's small gap in the wall, big enough to squeeze through")
+    time.sleep(a)
+    print()
+    secondPath = input("Do you squeeze through the gap? (Y/N): ")
+    if secondPath == 'y' or secondPath == 'Y':
+        path1_1()
+    elif secondPath == 'n' or secondPath == 'N':
+        path1_2()
+
 
 def path1_1():
     print()
