@@ -148,8 +148,52 @@ def path1_1(): # player loses game
     intro()
 
 def path1_2(): # player loses game
+    print("You avoid squeezing through the gap")
+    time.sleep(a)
+    print("Scanning the rest of the room you try to find a way out")
+    time.sleep(a)
+    print("There's another door, which is locked")
+    time.sleep(a)
     print()
-
+    s = '"I need to get through that door, it must be my way out"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(a)
+    print("You search around for something to help unlock the door")
+    time.sleep(a)
+    print("You notice a box on a table")
+    time.sleep(a)
+    print()
+    s = '"There must be something in here I can use"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(a)
+    print("It's nothing but old pictures of a young boy and his mother")
+    time.sleep(a)
+    print("There's something at the bottom of the box...it's an old teddy")
+    time.sleep(a)
+    print("You hear a groin coming through the small gap in the wall")
+    time.sleep(a)
+    print("In your panic you knock the box on the floor")
+    time.sleep(a)
+    print("The sound echoes around the the room")
+    time.sleep(a)
+    print("There is silence and then you here keys opening the door in fron of you")
+    time.sleep(a)
+    print()
+    s = '"So this is where you\'ve been hiding.  Well I have you now!"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(a)
+    print()
+    intro()
+    
 def path2(): # Door 2
     print()
 
