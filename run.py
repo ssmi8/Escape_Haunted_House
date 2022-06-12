@@ -100,22 +100,66 @@ def path1():  # Door 1
         path1_2()
 
 
-def path1_1():
+def path1_1(): # player loses game
+    print("You squeeze through the gap in the wall")
+    time.sleep(a)
+    print("It looks like this is a hidden room")
+    time.sleep(a)
+    print("There's a door in fron of you")
+    print("You hurry towards the door")
+    print("As you get to the door you hear something feint behind you")
+    time.sleep(a)
+    print()
+    s = '"H-Help M-Me!"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    print("In a flash you turn to see someone in the corner of the room")
+    time.sleep(a)
+    print("It's the girl who wrote the note...what is she doing in here?")
+    time.sleep(a)
+    print("You walk over to her, and you can see she's tied up")
+    time.sleep(a)
+    print()
+    s = '"Don\'t you worry, I\'ll get you out of here"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    print("You frantically search around for something to break the chains")
+    time.sleep(a)
+    print("Something catches your eye")
+    time.sleep(a)
+    print("There's movement outside the room")
+    time.sleep(a)
+    print("The sound footsteps haunt your soul")
+    time.sleep(a)
+    print("The door slams open")
+    time.sleep(a)
+    print()
+    s = '"Well, well, well, tried to escape did you.  I don\'t think so!"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    print()
+    time.sleep(a)
+    intro()
+
+def path1_2(): # player loses game
     print()
 
-def path1_2():
+def path2(): # Door 2
     print()
 
-def path2():
+def path2_1(): # player loses game
     print()
 
-def path2_1():
+def path2_2(): # player loses game
     print()
 
-def path2_2():
-    print()
-
-def path3():
+def path3(): # Door 3
     print("You push open the door slowly, and come to a corridor")
     print("It's dark and never ending")
     print("You here some feint noises in the distance")
