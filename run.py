@@ -104,7 +104,7 @@ def path1_1(): # player loses game
     time.sleep(a)
     print("It looks like this is a hidden room")
     time.sleep(a)
-    print("There's a door in fron of you")
+    print("There's a door in front of you")
     time.sleep(a)
     print("You hurry towards the door")
     time.sleep(a)
