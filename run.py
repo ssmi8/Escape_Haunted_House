@@ -211,15 +211,86 @@ def path2(): # Door 2
     print("Your eyes slowly adjust")
     time.sleep(a)
     print("The room looks like a surgical room")
-
-
-    
+    time.sleep(a)
+    print("You notice a steel door in the far corner")
+    time.sleep(a)
+    print("There's a key code next to the door")
+    time.sleep(a)
+    print()
+    s = '"A key code?  What could the code be?'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(a)
+    print("You search around the room for key")
+    time.sleep(a)
+    print("There's a computer!")
+    time.sleep(a)
+    print("You run to the computer")
+    time.sleep(a)
+    print("There's a  notepad on the desk")
+    time.sleep(a)
+    print("There are two codes written down. Which one is it?")
+    thirdPath = input("Do you choose code 1 or code 2? (1/2): ")
+    if thirdPath == '1':
+        path1_1()
+    elif thirdPath == '2':
+        path1_2()
 
 def path2_1(): # player loses game
+    print("Code 1")
+    time.sleep(a)
     print()
+    s = '"This has to be right one'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(a)
+    print("You rush back over to the keypad")
+    time.sleep(a)
+    print("You enter the code")
+    time.sleep(a)
+    print("An alarm rings a deafening sound around the room")
+    time.sleep(a)
+    print("There's no way to stop it")
+    time.sleep(a)
+    print("He's coming for you")
+    time.sleep(a)
+    intro()
+
 
 def path2_2(): # player loses game
+    print("Code 2")
+    time.sleep(a)
     print()
+    s = '"This has to be right one"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(a)
+    print("You rush back over to the keypad")
+    time.sleep(a)
+    print("You enter the code")
+    time.sleep(a)
+    print("Nothing...")
+    time.sleep(a)
+    print("Still nothing...")
+    time.sleep(a)
+    print("You hear a noise coming from behind you")
+    time.sleep(a)
+    print("You hurrily enter the code again")
+    time.sleep(a)
+    print()
+    s = '"You can\'t escape me now little one!"'
+    for character in s:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(b)
+    time.sleep(a)
+    intro()
 
 def path3(): # Door 3
     print("You push open the door slowly, and come to a corridor")
