@@ -6,6 +6,7 @@ a = 2
 b = 0.1
 c = 0.08
 
+
 def intro():
     print("(Everything is dark)")
     time.sleep(a)
@@ -56,13 +57,13 @@ def intro():
     print()
     time.sleep(a)
     firstPath = input("Which door will you choose? (1/2/3):\n")
-    if firstPath == '1':
+    if firstPath == "1":
         print()
         path1()
-    elif firstPath == '2':
+    elif firstPath == "2":
         print()
         path2()
-    elif firstPath == '3':
+    elif firstPath == "3":
         print()
         path3()
 
@@ -94,12 +95,13 @@ def path1():  # Door 1
     time.sleep(a)
     print()
     secondPath = input("Do you squeeze through the gap? (Y/N): ")
-    if secondPath == 'y' or secondPath == 'Y':
+    if secondPath == "y" or secondPath == "Y":
         path1_1()
-    elif secondPath == 'n' or secondPath == 'N':
+    elif secondPath == "n" or secondPath == "N":
         path1_2()
 
-def path1_1(): # player loses game
+
+def path1_1():  # player loses game
     print("You squeeze through the gap in the wall")
     time.sleep(a)
     print("It looks like this is a hidden room")
@@ -123,7 +125,7 @@ def path1_1(): # player loses game
     print("You walk over to her, and you can see she's tied up")
     time.sleep(a)
     print()
-    s = '"Don\'t you worry, I\'ll get you out of here"'
+    s = "\"Don't you worry, I'll get you out of here\""
     for character in s:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -148,7 +150,8 @@ def path1_1(): # player loses game
     time.sleep(a)
     intro()
 
-def path1_2(): # player loses game
+
+def path1_2():  # player loses game
     print("You avoid squeezing through the gap")
     time.sleep(a)
     print("Scanning the rest of the room you try to find a way out")
@@ -194,8 +197,9 @@ def path1_2(): # player loses game
     time.sleep(a)
     print()
     intro()
-    
-def path2(): # Door 2
+
+
+def path2():  # Door 2
     print("You gingerly walk over to the door")
     time.sleep(a)
     print("The door is heavy to push open")
@@ -233,12 +237,13 @@ def path2(): # Door 2
     time.sleep(a)
     print("There are two codes written down. Which one is it?")
     thirdPath = input("Do you choose code 1 or code 2? (1/2): ")
-    if thirdPath == '1':
+    if thirdPath == "1":
         path1_1()
-    elif thirdPath == '2':
+    elif thirdPath == "2":
         path1_2()
 
-def path2_1(): # player loses game
+
+def path2_1():  # player loses game
     print("Code 1")
     time.sleep(a)
     print()
@@ -261,7 +266,7 @@ def path2_1(): # player loses game
     intro()
 
 
-def path2_2(): # player loses game
+def path2_2():  # player loses game
     print("Code 2")
     time.sleep(a)
     print()
@@ -292,7 +297,8 @@ def path2_2(): # player loses game
     time.sleep(a)
     intro()
 
-def path3(): # Door 3
+
+def path3():  # Door 3
     print("You push open the door slowly, and come to a corridor")
     time.sleep(a)
     print("It's dark and never ending")
@@ -337,7 +343,7 @@ def path3(): # Door 3
     time.sleep(a)
     print("Thud, Thud, Thud")
     time.sleep(a)
-    print("....They're here")#
+    print("....They're here")  #
     time.sleep(a)
     print()
     time.sleep(a)
@@ -346,9 +352,9 @@ def path3(): # Door 3
     print("option #2: Make a run for it!")
     time.sleep(a)
     thirdPath = input("Which path would you like to take? (1/2):\n")
-    if thirdPath == '1':
+    if thirdPath == "1":
         path3_1()
-    elif thirdPath == '2':
+    elif thirdPath == "2":
         path3_2()
 
 
@@ -367,6 +373,7 @@ def path3_1():
     print("GAME OVER - Try Again!")
     time.sleep(a)
     intro()
+
 
 def path3_2():
     print()  # Winning path
@@ -460,8 +467,7 @@ print("...Everthing turns black")
 time.sleep(a)
 print()
 start_game = input("Would you like to start the game? (Y/N):\n")
-if start_game == 'n' or start_game == 'N':
+if start_game == "n" or start_game == "N":
     print("Okay...maybe next time")
-elif start_game == 'y' or start_game == 'Y':
+elif start_game == "y" or start_game == "Y":
     intro()
-
