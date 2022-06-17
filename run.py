@@ -133,7 +133,7 @@ def path1():  # Door 1
             print("Thanks for playing!")
         else:
             print("Invalid entry: please select Y or N")
-            c1 = input()    
+            c1 = input()
 
 
 def path1_1():  # player loses game
@@ -642,4 +642,3 @@ while(ans == 'incorrect'):
     else:
         print("Invalid entry: please select Y or N")
         c1 = input()
-    
