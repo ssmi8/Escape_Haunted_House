@@ -1,5 +1,7 @@
 # Escape Horror House
 
+<img src="ux-files/amiresponsive.png" width="auto" height="auto">
+
 * [Introduction](https://github.com/ssmi8/Escape_Horror_House#introduction)
 * [Design](https://github.com/ssmi8/Escape_Horror_House#design)
 * [Development Cycle](https://github.com/ssmi8/Escape_Horror_House#development-cycle)
