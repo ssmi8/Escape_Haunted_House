@@ -104,7 +104,7 @@ def path1():  # Door 1
     print("There's small gap in the wall, big enough to squeeze through")
     time.sleep(a)
     print()
-    secondPath = input("Do you squeeze through the gap? (Y/N): ")
+    secondPath = input("Do you squeeze through the gap? (Y/N):\n")
     if secondPath == "y" or secondPath == "Y":
         path1_1()
     elif secondPath == "n" or secondPath == "N":
@@ -161,7 +161,7 @@ def path1_1():  # player loses game
     print()
     time.sleep(a)
     print("GAME OVER")
-    restart = input("Do you want to play again? (Y/N): ")
+    restart = input("Do you want to play again? (Y/N):\n")
     if restart == "y" or restart == "Y":
         intro()
     elif restart == "n" or restart == "N":
@@ -215,7 +215,7 @@ def path1_2():  # player loses game
     print()
     time.sleep(a)
     print("GAME OVER")
-    restart = input("Do you want to play again? (Y/N): ")
+    restart = input("Do you want to play again? (Y/N):\n")
     if restart == "y" or restart == "Y":
         intro()
     elif restart == "n" or restart == "N":
@@ -260,7 +260,7 @@ def path2():  # Door 2
     print("There's a  notepad on the desk")
     time.sleep(a)
     print("There are two codes written down. Which one is it?")
-    thirdPath = input("Do you choose code 1 or code 2? (1/2): ")
+    thirdPath = input("Do you choose code 1 or code 2? (1/2):\n")
     if thirdPath == "1":
         path2_1()
     elif thirdPath == "2":
