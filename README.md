@@ -20,13 +20,13 @@ This a small interactive adventure game that challenges the player to try and es
 
 ## Design
 
-The main design idea was to lead the user/player on a simple text adventure that will only have one winning outcome but many ways for the user/player to become recaptured.  The idea of having one successful path is to encourage the user to keep trying to find a solution to the game.
+The main design idea was to lead the user/player on a simple text adventure that will only have one winning outcome but many ways for the user/player to become recaptured.  The idea of having one successful path is to encourage the user to keep trying to find a solution to the game, whist being capdivated by the storyline.
 
 ## Development Cycle
 
-At the beginnig of the project I want to make sure I had a good understanding of what the storyline and how was our was going to structure the paths/options for the user.
+At the beginnig of the project I wanted to make sure I had a good understanding of what the storyline was going to be and how I was going to structure the paths/options for the user.
 
-I used the following development steps:
+I used the following development steps in order to complete this project:
 
 * Create a basic story line
 * Create a decision tree
@@ -67,10 +67,8 @@ I ran my code through the PEP8 validator, which came up with no issues - "All Ri
 ## Errors
 
 * Upon playing the game and testing the functionality, I noticed that one of the decisions led to the wrong path.  I corrected this by referring it to the correct functions.
-* I noticed on a number of lines, it exceeded the charater lengths so I amended the text to make sure it all fit.
+* I noticed on a number of lines, it exceeded the character lengths so I amended the text to make sure it all fit.
 * When testing I realised the restart function did not work, where I has misspelt the text which was corrected.
-
-
 
 
 ## Deployment
@@ -97,13 +95,11 @@ I used the video tutorial provided by The Code Institute to create a Heroku acco
 * Once completed click View App
 
 
-
 ## Future Improvements
 
 Add more difficult levels/paths to the the game to challenge users more and create a more detailed storyline.  The user would be able to build upon each level of the game.
 
 ## Credits
-
 
 ### Reference Material
 
