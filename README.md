@@ -7,18 +7,9 @@
 
 This a small interactive adventure game that challenges the player to try and escape from a horror house after being held captive by a mysterious person. There is only one way out and many ways to be caught, trying to escape. We use a command line interface to let the user interact with the game. The user will make their decisions based on the scenario they find them selves in and their decisions will ultimately win the game or lose the game.
 
-## UX
+## Design
 
-By visiting this site, as a user I would like: 
-
-- to play a game to improve my congnitive function.
-- to immediately understand what the game is and how it works.
-- to enjoy and understand the theme of the game.
-- to play a brain training game whilst having a fun experience.
-
-
-### Landing Page
-
+The main design idea was to lead the user/player on a simple text adventure that will only have one winning outcome but many ways for the user/player to become recaptured.  The idea of having one successful path is to encourage the user to keep trying to find a solution to the game.
 
 ## Development Cycle
 
@@ -32,6 +23,19 @@ I used the following development steps:
 * Code the logic using with functions and if/elif
 * Add time delay effect for text
 
+### Decision Tree
+
+<img src="ux-files/decisiontree.png" width="auto" height="auto">
+
+## UX
+
+### User Stories
+
+* As a user I would like to know what game I am playing
+* As a user I want to be able to interact with the game.
+* As a user I want to be able to distinguish between the choices I must make in the game.
+* As a user I would want to know if I win or lose the game
+* As a user I would like the option to play again or quit the game
 
 ## Testing
 
@@ -53,7 +57,7 @@ Testing was done as each change was saved.
 
 ## Deployment
 
-The live deployed application can be found here
+The live deployed application can be found here:
 
 ### Creating an Application with Heroku
 

@@ -1,4 +1,7 @@
 # Creator: Steven Smith
+# 18.06.22
+# Escape Horror House
+
 import sys
 import time
 
@@ -148,7 +151,13 @@ def path1_1():  # player loses game
         time.sleep(b)
     print()
     time.sleep(a)
-    intro()
+    print("GAME OVER")
+    restart = input("Do you want to play again? (Y/N): ")
+    if restart == "y" or restart == "Y":
+        intro()
+    elif restart == "n" or restart == "N":
+        print("Thank you for playing!")
+        
 
 
 def path1_2():  # player loses game
