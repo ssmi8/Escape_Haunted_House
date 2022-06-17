@@ -73,7 +73,7 @@ I ran my code through the PEP8 validator, which came up with no issues - "All Ri
 
 ## Deployment
 
-The live deployed application can be found here:
+The live deployed application can be found here: [Escape Horror House](https://escape-horror-house.herokuapp.com/)
 
 ### Creating an Application with Heroku
 

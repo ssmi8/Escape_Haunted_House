@@ -11,6 +11,8 @@ c = 0.08
 
 
 def intro():
+    print()
+    time.sleep(a)
     print("To quit the game, press Q at any input section...")
     print()
     print()
@@ -63,18 +65,29 @@ def intro():
     print()
     print()
     time.sleep(a)
-    firstPath = input("Which door will you choose? (1/2/3):\n")
-    if firstPath == "1":
-        print()
-        path1()
-    elif firstPath == "2":
-        print()
-        path2()
-    elif firstPath == "3":
-        print()
-        path3()
-    elif firstPath == "q" or firstPath == "Q":
-        print("Thanks for playing!")
+    print("Which door will you choose? (1/2/3):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "1":
+            print()
+            ans = 'correct'
+            path1()
+        elif c1 == "2":
+            print()
+            ans = 'correct'
+            path2()
+        elif c1 == "3":
+            print()
+            ans = 'correct'
+            path3()
+        elif c1 == "q" or c1 == "Q":
+            print("Thanks for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select 1,2 or 3")
+            c1 = input()
 
 
 def path1():  # Door 1
@@ -104,13 +117,23 @@ def path1():  # Door 1
     print("There's small gap in the wall, big enough to squeeze through")
     time.sleep(a)
     print()
-    secondPath = input("Do you squeeze through the gap? (Y/N):\n")
-    if secondPath == "y" or secondPath == "Y":
-        path1_1()
-    elif secondPath == "n" or secondPath == "N":
-        path1_2()
-    elif secondPath == "q" or secondPath == "Q":
-        print("Thanks for playing!")
+    print("Do you squeeze through the gap? (Y/N):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "y" or c1 == "Y":
+            ans = 'correct'
+            path1_1()
+        elif c1 == "n" or c1 == "N":
+            ans = 'correct'
+            path1_2()
+        elif c1 == "q" or c1 == "Q":
+            ans = 'correct'
+            print("Thanks for playing!")
+        else:
+            print("Invalid entry: please select Y or N")
+            c1 = input()    
 
 
 def path1_1():  # player loses game
@@ -130,6 +153,8 @@ def path1_1():  # player loses game
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(b)
+    print()
+    time.sleep(a)
     print("In a flash you turn to see someone in the corner of the room")
     time.sleep(a)
     print("It's the girl who wrote the note...what is she doing in here?")
@@ -142,6 +167,8 @@ def path1_1():  # player loses game
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(b)
+    print()
+    time.sleep(a)
     print("You frantically search around for something to break the chains")
     time.sleep(a)
     print("Something catches your eye")
@@ -161,11 +188,21 @@ def path1_1():  # player loses game
     print()
     time.sleep(a)
     print("GAME OVER")
-    restart = input("Do you want to play again? (Y/N):\n")
-    if restart == "y" or restart == "Y":
-        intro()
-    elif restart == "n" or restart == "N":
-        print("Thank you for playing!")
+    time.sleep(a)
+    print("Do you want to play again? (Y/N):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "y" or c1 == "Y":
+            ans = 'correct'
+            intro()
+        elif c1 == "n" or c1 == "N":
+            print("Thank you for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select Y or N")
+            c1 = input()
 
 
 def path1_2():  # player loses game
@@ -182,6 +219,7 @@ def path1_2():  # player loses game
         sys.stdout.flush()
         time.sleep(b)
     time.sleep(a)
+    print()
     print("You search around for something to help unlock the door")
     time.sleep(a)
     print("You notice a box on a table")
@@ -215,11 +253,21 @@ def path1_2():  # player loses game
     print()
     time.sleep(a)
     print("GAME OVER")
-    restart = input("Do you want to play again? (Y/N):\n")
-    if restart == "y" or restart == "Y":
-        intro()
-    elif restart == "n" or restart == "N":
-        print("Thank you for playing!")
+    time.sleep(a)
+    print("Do you want to play again? (Y/N):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "y" or c1 == "Y":
+            ans = 'correct'
+            intro()
+        elif c1 == "n" or c1 == "N":
+            print("Thank you for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select Y or N")
+            c1 = input()
 
 
 def path2():  # Door 2
@@ -261,13 +309,23 @@ def path2():  # Door 2
     time.sleep(a)
     print("There are two codes written down. Which one is it?")
     print()
-    thirdPath = input("Do you choose code 1 or code 2? (1/2):\n")
-    if thirdPath == "1":
-        path2_1()
-    elif thirdPath == "2":
-        path2_2()
-    elif thirdPath == "q" or thirdPath == "Q":
-        print("Thanks for playing!")
+    print("Do you choose code 1 or code 2? (1/2):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "1":
+            ans = 'correct'
+            path2_1()
+        elif c1 == "2":
+            ans = 'correct'
+            path2_2()
+        elif c1 == "q" or c1 == "Q":
+            print("Thanks for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select 1 or 2")
+            c1 = input()
 
 
 def path2_1():  # player loses game
@@ -275,12 +333,13 @@ def path2_1():  # player loses game
     print("Code 1")
     time.sleep(a)
     print()
-    s = '"This has to be right one'
+    s = '"This has to be the right one"'
     for character in s:
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(b)
     time.sleep(a)
+    print()
     print("You rush back over to the keypad")
     time.sleep(a)
     print("You enter the code")
@@ -295,11 +354,21 @@ def path2_1():  # player loses game
     print()
     print("GAME OVER")
     print()
-    restart = input("Do you want to play again? (Y/N): ")
-    if restart == "y" or restart == "Y":
-        intro()
-    elif restart == "n" or restart == "N":
-        print("Thank you for playing!")
+    time.sleep(a)
+    print("Do you want to play again? (Y/N):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "y" or c1 == "Y":
+            ans = 'correct'
+            intro()
+        elif c1 == "n" or c1 == "N":
+            print("Thank you for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select Y or N")
+            c1 = input()
 
 
 def path2_2():  # player loses game
@@ -307,12 +376,13 @@ def path2_2():  # player loses game
     print("Code 2")
     time.sleep(a)
     print()
-    s = '"This has to be right one"'
+    s = '"This has to be the right one"'
     for character in s:
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(b)
     time.sleep(a)
+    print()
     print("You rush back over to the keypad")
     time.sleep(a)
     print("You enter the code")
@@ -333,16 +403,28 @@ def path2_2():  # player loses game
         sys.stdout.flush()
         time.sleep(b)
     time.sleep(a)
+    print()
     time.sleep(a)
+    print()
     print("He has you!")
     print()
     print("GAME OVER")
     print()
-    restart = input("Do you want to play again? (Y/N): ")
-    if restart == "y" or restart == "Y":
-        intro()
-    elif restart == "n" or restart == "N":
-        print("Thank you for playing!")
+    time.sleep(a)
+    print("Do you want to play again? (Y/N):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "y" or c1 == "Y":
+            ans = 'correct'
+            intro()
+        elif c1 == "n" or c1 == "N":
+            print("Thank you for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select Y or N")
+            c1 = input()
 
 
 def path3():  # Door 3
@@ -398,13 +480,23 @@ def path3():  # Door 3
     time.sleep(a)
     print("option #2: Make a run for it!")
     time.sleep(a)
-    thirdPath = input("Which path would you like to take? (1/2):\n")
-    if thirdPath == "1":
-        path3_1()
-    elif thirdPath == "2":
-        path3_2()
-    elif thirdPath == "q" or thirdPath == "Q":
-        print("Thanks for playing!")
+    print("Which path would you like to take? (1/2):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "1":
+            ans = 'correct'
+            path3_1()
+        elif c1 == "2":
+            ans = 'correct'
+            path3_2()
+        elif c1 == "q" or c1 == "Q":
+            print("Thanks for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select 1 or 2")
+            c1 = input()
 
 
 def path3_1():
@@ -419,13 +511,26 @@ def path3_1():
     time.sleep(a)
     print('"HAHAHA I found you little one!')
     time.sleep(a)
+    print()
+    print()
     print("GAME OVER - Try Again!")
     time.sleep(a)
-    restart = input("Do you want to play again? (Y/N): ")
-    if restart == "y" or restart == "Y":
-        intro()
-    elif restart == "n" or restart == "N":
-        print("Thank you for playing!")
+    print()
+    print()
+    print("Do you want to play again? (Y/N):")
+
+    c1 = input()
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if c1 == "y" or c1 == "Y":
+            ans = 'correct'
+            intro()
+        elif c1 == "n" or c1 == "N":
+            print("Thank you for playing!")
+            ans = 'correct'
+        else:
+            print("Invalid entry: please select Y or N")
+            c1 = input()
 
 
 def path3_2():
@@ -484,6 +589,8 @@ def path3_2():
     time.sleep(a)
     print("CONGRATULATIONS!  YOU WON!!")
     time.sleep(a)
+    print("You successfully escaoed Horror House!")
+    time.sleep(a)
     print("Thanks for playing!!")
 
 
@@ -521,8 +628,18 @@ time.sleep(a)
 print("...Everthing turns black")
 time.sleep(a)
 print()
-start_game = input("Would you like to start the game? (Y/N):\n")
-if start_game == "n" or start_game == "N":
-    print("Okay...maybe next time")
-elif start_game == "y" or start_game == "Y":
-    intro()
+print("Would you like to start the game? (Y/N)")
+
+c1 = input()
+ans = 'incorrect'
+while(ans == 'incorrect'):
+    if c1 == "n" or c1 == "N":
+        print("Okay...maybe next time")
+        ans = 'correct'
+    elif c1 == "y" or c1 == "Y":
+        ans = 'correct'
+        intro()
+    else:
+        print("Invalid entry: please select Y or N")
+        c1 = input()
+    
