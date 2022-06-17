@@ -16,7 +16,7 @@
 
 ## Introduction
 
-This a small interactive adventure game that challenges the player to try and escape from a horror house after being held captive by a mysterious person. There is only one way out and many ways to be caught, trying to escape. We use a command line interface to let the user interact with the game. The user will make their decisions based on the scenario they find them selves in and their decisions will ultimately win the game or lose the game.
+This a small interactive adventure game that challenges the player to try and escape from a horror house after being held captive by a mysterious person. There is only one way out and many ways to be caught, trying to escape. I used a command line interface to let the user interact with the game. The user will make their decisions based on the scenario they find them selves in and their decisions will ultimately win the game or lose the game.
 
 ## Design
 
@@ -69,6 +69,7 @@ I ran my code through the PEP8 validator, which came up with no issues - "All Ri
 * Upon playing the game and testing the functionality, I noticed that one of the decisions led to the wrong path.  I corrected this by referring it to the correct functions.
 * I noticed on a number of lines, it exceeded the character lengths so I amended the text to make sure it all fit.
 * When testing I realised the restart function did not work, where I has misspelt the text which was corrected.
+* Towards the end of my project, I realised my invalid solutions were not working as they were not in a loop - I correct by using a while/else loop.
 
 
 ## Deployment
