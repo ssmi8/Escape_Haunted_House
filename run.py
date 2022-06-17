@@ -244,7 +244,7 @@ def path2():  # Door 2
     print("There's a key code next to the door")
     time.sleep(a)
     print()
-    s = '"A key code?  What could the code be?'
+    s = '"A key code?  What could the code be?"'
     for character in s:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -257,9 +257,10 @@ def path2():  # Door 2
     time.sleep(a)
     print("You run to the computer")
     time.sleep(a)
-    print("There's a  notepad on the desk")
+    print("There's a notepad on the desk")
     time.sleep(a)
     print("There are two codes written down. Which one is it?")
+    print()
     thirdPath = input("Do you choose code 1 or code 2? (1/2):\n")
     if thirdPath == "1":
         path2_1()
@@ -270,6 +271,7 @@ def path2():  # Door 2
 
 
 def path2_1():  # player loses game
+    print()
     print("Code 1")
     time.sleep(a)
     print()
@@ -289,8 +291,10 @@ def path2_1():  # player loses game
     time.sleep(a)
     print("He's coming for you")
     time.sleep(a)
-    time.sleep(a)
+    print("The door swings open and you're caught")
+    print()
     print("GAME OVER")
+    print()
     restart = input("Do you want to play again? (Y/N): ")
     if restart == "y" or restart == "Y":
         intro()
@@ -299,6 +303,7 @@ def path2_1():  # player loses game
 
 
 def path2_2():  # player loses game
+    print()
     print("Code 2")
     time.sleep(a)
     print()
@@ -314,6 +319,7 @@ def path2_2():  # player loses game
     time.sleep(a)
     print("Nothing...")
     time.sleep(a)
+    print()
     print("Still nothing...")
     time.sleep(a)
     print("You hear a noise coming from behind you")
@@ -328,7 +334,10 @@ def path2_2():  # player loses game
         time.sleep(b)
     time.sleep(a)
     time.sleep(a)
+    print("He has you!")
+    print()
     print("GAME OVER")
+    print()
     restart = input("Do you want to play again? (Y/N): ")
     if restart == "y" or restart == "Y":
         intro()
