@@ -1,6 +1,17 @@
 # Escape Horror House
 
-(table of contents)
+* [Introduction](https://github.com/ssmi8/Escape_Horror_House#introduction)
+* [Design](https://github.com/ssmi8/Escape_Horror_House#design)
+* [Development Cycle](https://github.com/ssmi8/Escape_Horror_House#development-cycle)
+    - [Decision Tree](https://github.com/ssmi8/Escape_Horror_House#decision-tree)
+* [UX](https://github.com/ssmi8/Escape_Horror_House#ux)
+    - [User Stories](https://github.com/ssmi8/Escape_Horror_House#user-stories)
+* [Testing](https://github.com/ssmi8/Escape_Horror_House#testing)
+    - [PEP8 Testing](https://github.com/ssmi8/Escape_Horror_House#pep8-testing)
+* [Errors](https://github.com/ssmi8/Escape_Horror_House#errors)
+* [Deployment](https://github.com/ssmi8/Escape_Horror_House#deployment)
+* [Future Improvements](https://github.com/ssmi8/Escape_Horror_House#future-improvements)
+* [Credits](https://github.com/ssmi8/Escape_Horror_House#credits)
 
 
 ## Introduction
@@ -55,7 +66,9 @@ I ran my code through the PEP8 validator, which came up with no issues - "All Ri
 
 ## Errors
 
-* 
+* Upon playing the game and testing the functionality, I noticed that one of the decisions led to the wrong path.  I corrected this by referring it to the correct functions.
+* I noticed on a number of lines, it exceeded the charater lengths so I amended the text to make sure it all fit.
+* When testing I realised the restart function did not work, where I has misspelt the text which was corrected.
 
 
 
